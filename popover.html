@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* kun for at det ligner en dropdown - browser har sin egen styling til popover */
+        #kommunePopover { margin: 0; }
+        #kommunePopover a { display: block; }
+        #kommunePopover a:hover { background: #eee; }
+    </style>
+</head>
+<body>
+<button popovertarget="kommunePopover"> Vælg kommune </button>
+
+<ul id="kommunePopover" popover>
+</ul>
+
+<button id="pbFetchKommuner"> Fyld dropdown </button>
+
+</body>
+<script src="js/popoverdropdown.js"></script>
+</html>
